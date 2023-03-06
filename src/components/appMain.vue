@@ -31,7 +31,7 @@
     <div class="container">
       <div class="cards-founded">Founded {{ cards.length }} cards</div>
       <ul>
-        <cardsList v-for="element in cards" :key="element.id" :archetype="element.archetype" :name="element.name"></cardsList>
+        <cardsList v-for="element in cards" :key="element.id" :archetype="element.archetype" :name="element.name" :image="element.cards_images"></cardsList>
       </ul>      
     </div>
   </main>
