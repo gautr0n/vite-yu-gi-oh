@@ -16,7 +16,7 @@
 
 <template>
     <li>
-        <img src="https://images.ygoprodeck.com/images/cards/34541863.jpg" alt="">
+        <img :src="image" alt="">
         <div class="info-box">
           <div>{{name}}</div>
           <div>{{archetype}}</div> 
