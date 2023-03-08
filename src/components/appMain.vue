@@ -15,9 +15,9 @@
     },
     methods: {
       yugiCards() {
-        axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=21&offset=0').then((res) => {
+        axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?fname=' + this.store.search).then((res) => {
           store.cards = res.data.data
-          console.log(store);
+          console.log(store.cards);
         }) 
       }
     },
